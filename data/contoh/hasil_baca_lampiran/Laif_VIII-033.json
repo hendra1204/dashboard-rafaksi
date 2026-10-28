@@ -1,0 +1,147 @@
+{
+ "invoice": "26/VIII/033",
+ "supermarket": "PT Duta Cahaya Sukses",
+ "claim_lines": [
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 1 - 31 Jan 2026",
+   "filia_amount": 42975,
+   "supermarket_doc": "Kwitansi 610002.V2025.1.20260101.2026013129 dated 29/Mei/2026 (Nominal 255,555)",
+   "program": "Laporan Claim Best Buy - Rafaksi PT FILIA SUKSES MANDIRI",
+   "periode_mulai": "2026-01-01",
+   "periode_akhir": "2026-01-31",
+   "periode_text": "Periode 01/Jan/2026 - 31/Jan/2026",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "610002",
+     "store_name": null,
+     "product": "8993319190727 OLAIF ANTISEPRIC WET WIPES 20 S",
+     "qty": 12,
+     "harga": 10500,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 1050,
+     "dpp": 12600,
+     "ppn": null,
+     "total": 12600
+    },
+    {
+     "store_code": "610002",
+     "store_name": null,
+     "product": "8993319190130 OLAIF COMPLETE CARE TOOHPASTE 200 GR",
+     "qty": 5,
+     "harga": 28500,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 4275,
+     "dpp": 21375,
+     "ppn": null,
+     "total": 21375
+    },
+    {
+     "store_code": "610002",
+     "store_name": null,
+     "product": "8993319190086 OLAIF POWER BLEACH TOILET 500 ML",
+     "qty": 4,
+     "harga": 22500,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2250,
+     "dpp": 9000,
+     "ppn": null,
+     "total": 9000
+    }
+   ],
+   "lampiran_total": 42975,
+   "check": "rows sum = lampiran_total = filia_amount: OK",
+   "notes": "Kwitansi/attachment total 255,555 covers all Filia brands: Bento 79,620 + Olaif 42,975 + Yuuka 132,960 (subtotals hand-written on the sheet; 42,975 highlighted). Only Olaif rows claimed. Attachment shows Discount 0 / Potongan Harga \"-\" so the per-pcs claim and % are not printed: rafaksi_per_pcs derived = Total Claim / Claim qty (implied 10%, 15%, 10% of Harga). Lokasi 610002 (store name not printed). No PPN."
+  },
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 1 - 15 Feb 2026",
+   "filia_amount": 24830,
+   "supermarket_doc": "Kwitansi 610002.V2025.1.20260201.2026021529 dated 29/Mei/2026 (Nominal 24,830)",
+   "program": "Laporan Claim Best Buy - Rafaksi PT FILIA SUKSES MANDIRI",
+   "periode_mulai": "2026-02-01",
+   "periode_akhir": "2026-02-15",
+   "periode_text": "Periode 01/Feb/2026 - 15/Feb/2026",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "610002",
+     "store_name": null,
+     "product": "8993319190024 OLAIF LIQUIT DETERGENT REFF 1 LITER",
+     "qty": 3,
+     "harga": 26800,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2680,
+     "dpp": 8040,
+     "ppn": null,
+     "total": 8040
+    },
+    {
+     "store_code": "610002",
+     "store_name": null,
+     "product": "8993319190765 OLAIF PERPLE TOOTHPASTE 200 GR",
+     "qty": 1,
+     "harga": 33600,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 5040,
+     "dpp": 5040,
+     "ppn": null,
+     "total": 5040
+    },
+    {
+     "store_code": "610002",
+     "store_name": null,
+     "product": "8993319190611 OLAIF PRO CLEAN TOOTBRUSH MEDIUM 3S",
+     "qty": 2,
+     "harga": 23500,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2350,
+     "dpp": 4700,
+     "ppn": null,
+     "total": 4700
+    },
+    {
+     "store_code": "610002",
+     "store_name": null,
+     "product": "8993319190604 OLAIF PRO CLEAN TOOTBRUSH SOFT 3S",
+     "qty": 3,
+     "harga": 23500,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2350,
+     "dpp": 7050,
+     "ppn": null,
+     "total": 7050
+    }
+   ],
+   "lampiran_total": 24830,
+   "check": "rows sum = lampiran_total = filia_amount: OK",
+   "notes": "All rows Olaif; kwitansi total = attachment total = Filia amount. rafaksi_per_pcs derived (not printed): implied 10%, 15%, 10%, 10% of Harga. Lokasi 610002. No PPN."
+  },
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 3 - 31 Mar 2026",
+   "filia_amount": 5700,
+   "supermarket_doc": "Kwitansi 610002.V2025.1.20260303.2026033129 dated 29/Mei/2026 (Nominal 92,285)",
+   "program": "Laporan Claim Best Buy - Rafaksi PT FILIA SUKSES MANDIRI",
+   "periode_mulai": "2026-03-03",
+   "periode_akhir": "2026-03-31",
+   "periode_text": "Periode 03/Mar/2026 - 31/Mar/2026",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "610002",
+     "store_name": null,
+     "product": "8993319190130 OLAIF COMPLETE CARE TOOHPASTE 200 GR",
+     "qty": 2,
+     "harga": 28500,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2850,
+     "dpp": 5700,
+     "ppn": null,
+     "total": 5700
+    }
+   ],
+   "lampiran_total": 5700,
+   "check": "rows sum = lampiran_total = filia_amount: OK",
+   "notes": "Kwitansi/attachment total 92,285 covers Olaif 5,700 + Yuuka 42,860 + Zozo 43,725 (hand-written subtotals). Only the Olaif row claimed. Attachment page is scanned rotated/upside-down; digits verified at full resolution. rafaksi_per_pcs derived (implied 10%). Lokasi 610002. No PPN."
+  }
+ ]
+}

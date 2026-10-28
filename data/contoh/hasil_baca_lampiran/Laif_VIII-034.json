@@ -1,0 +1,93 @@
+{
+ "invoice": "26/VIII/034",
+ "supermarket": "PT Kage Dwijaya",
+ "claim_lines": [
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 1 - 31 Mei 2026",
+   "filia_amount": 407675,
+   "supermarket_doc": "Kwitansi No. 02404/POINS/VI/2026 dated 23-June-2026 (Rp 436.120); SKP No. 4293 (Poins)",
+   "program": "Program Rafaksi Harga Produk Filia Sukses Mandiri di Diamond Poins",
+   "periode_mulai": "2026-05-01",
+   "periode_akhir": "2026-05-31",
+   "periode_text": "Periode 1-31 Mei 2026 (report 5/1/26 to 5/31/26)",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "03",
+     "store_name": "Diamond Poins",
+     "product": "34010412 OLAIF PRO CLEAN TB MEDIUM 3P",
+     "qty": 6,
+     "harga": 24500,
+     "disc_pct": 0.1,
+     "rafaksi_per_pcs": 2450,
+     "dpp": 14700,
+     "ppn": null,
+     "total": 14700
+    },
+    {
+     "store_code": "03",
+     "store_name": "Diamond Poins",
+     "product": "34010424 OLAIF SMOOTH ULTRA FLOSS 50M",
+     "qty": 17,
+     "harga": 26400,
+     "disc_pct": 0.1,
+     "rafaksi_per_pcs": 2640,
+     "dpp": 44880,
+     "ppn": null,
+     "total": 44880
+    },
+    {
+     "store_code": "03",
+     "store_name": "Diamond Poins",
+     "product": "34020071 OLAIF TP SENSITIVE CARE 200GR",
+     "qty": 18,
+     "harga": 40000,
+     "disc_pct": 0.3,
+     "rafaksi_per_pcs": 12000,
+     "dpp": 216000,
+     "ppn": null,
+     "total": 216000
+    },
+    {
+     "store_code": "03",
+     "store_name": "Diamond Poins",
+     "product": "34020079 OLAIF TP PURPLE 200GR",
+     "qty": 21,
+     "harga": 32900,
+     "disc_pct": 0.15,
+     "rafaksi_per_pcs": 4935,
+     "dpp": 103635,
+     "ppn": null,
+     "total": 103635
+    },
+    {
+     "store_code": "03",
+     "store_name": "Diamond Poins",
+     "product": "37010089 OLAIF DOUBLE SEAL ZIPLOCK BAG 1.8LTR",
+     "qty": 7,
+     "harga": 26800,
+     "disc_pct": 0.1,
+     "rafaksi_per_pcs": 2680,
+     "dpp": 18760,
+     "ppn": null,
+     "total": 18760
+    },
+    {
+     "store_code": "03",
+     "store_name": "Diamond Poins",
+     "product": "38110174 OLAIF DURABLE CLEANING SPONGE 3P",
+     "qty": 5,
+     "harga": 19400,
+     "disc_pct": 0.1,
+     "rafaksi_per_pcs": 1940,
+     "dpp": 9700,
+     "ppn": null,
+     "total": 9700
+    }
+   ],
+   "lampiran_total": 407675,
+   "check": "rows sum = lampiran_total = filia_amount: OK",
+   "notes": "Kwitansi total 436,120 includes non-Olaif items BARA MKP ROLL 10ML (25%, 7,025) and CLARA WASHING MACHINE CLEANER 500GR (15%, 21,420); 436,120 - 28,445 = 407,675 Olaif. Attachment prints Quantity Sold, Gross Amt and Disc %: gross amounts 147,000 / 448,800 / 720,000 / 690,900 / 187,600 / 97,000; harga and rafaksi_per_pcs derived = gross/qty and x disc. Disc % match SKP (Surat Konfirmasi Promosi, page 4, signed 21/04/2026). Entity 03 = Diamond Poins (per kwitansi). No PPN."
+  }
+ ]
+}

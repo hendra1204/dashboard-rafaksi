@@ -1,0 +1,219 @@
+{
+ "invoice": "26/VIII/043",
+ "supermarket": "PT Aeon Indonesia",
+ "claim_lines": [
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode Okt - Des 25",
+   "filia_amount": 3840540,
+   "supermarket_doc": "B26-1001-0007830 / SKP_B26-1001-0007830",
+   "program": "Member Day",
+   "periode_mulai": "2025-10-01",
+   "periode_akhir": "2025-12-31",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "1001",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF TOOTHBRUSH PRO CLEAN SOFT",
+     "qty": 291,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 179840,
+     "ppn": null,
+     "total": 179840
+    },
+    {
+     "store_code": "1001",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF TOOTHBRUSH PRO CLEAN SOFT 3PCS",
+     "qty": 383,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 571375,
+     "ppn": null,
+     "total": 571375
+    },
+    {
+     "store_code": "1001",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF TOOTHPASTE COMPLETE CARE",
+     "qty": 275,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 420175,
+     "ppn": null,
+     "total": 420175
+    },
+    {
+     "store_code": "1001",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF TOOTHPICK FLOSS CLASSIC",
+     "qty": 630,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 658000,
+     "ppn": null,
+     "total": 658000
+    },
+    {
+     "store_code": "1001",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF FLOSS SMOOTH ULTRA",
+     "qty": 164,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 252840,
+     "ppn": null,
+     "total": 252840
+    },
+    {
+     "store_code": "1001",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF DENTAL SENSITIVE TOOTHPASTE 200GR",
+     "qty": 177,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 427190,
+     "ppn": null,
+     "total": 427190
+    },
+    {
+     "store_code": "1001",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF PURPLE TOOTHPASTE 200GR",
+     "qty": 299,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 542950,
+     "ppn": null,
+     "total": 542950
+    },
+    {
+     "store_code": "1001",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF MEN SHAVER TRIPLE BLADE 5S",
+     "qty": 265,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 377250,
+     "ppn": null,
+     "total": 377250
+    },
+    {
+     "store_code": "1001",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF WOMEN SHAVER TRIPLE BLADE 3S",
+     "qty": 424,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 410920,
+     "ppn": null,
+     "total": 410920
+    }
+   ]
+  },
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 10 Nov - 7 Des 25",
+   "filia_amount": 1564820,
+   "supermarket_doc": "B26-1010-0003104",
+   "program": "Promo end user",
+   "periode_mulai": "2025-11-10",
+   "periode_akhir": "2025-12-07",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "1010",
+     "store_name": "AEON Eastvara",
+     "product": "OLAIF PURPLE TOOTHPASTE 200GR",
+     "qty": 207,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 4200,
+     "dpp": 869400,
+     "ppn": null,
+     "total": 869400
+    },
+    {
+     "store_code": "1010",
+     "store_name": "AEON Eastvara",
+     "product": "OLAIF WOMEN SHAVER TRIPLE BLADE 3S",
+     "qty": 319,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2180,
+     "dpp": 695420,
+     "ppn": null,
+     "total": 695420
+    }
+   ]
+  },
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 4 - 17 Des 25",
+   "filia_amount": 337450,
+   "supermarket_doc": "B26-1005-0003636",
+   "program": "Promo end user",
+   "periode_mulai": "2025-12-04",
+   "periode_akhir": "2025-12-17",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "1005",
+     "store_name": "AEON Deltamas",
+     "product": "OLAIF GENTLE CARE BABY WIPES 80S",
+     "qty": 33,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 3050,
+     "dpp": 100650,
+     "ppn": null,
+     "total": 100650
+    },
+    {
+     "store_code": "1005",
+     "store_name": "AEON Deltamas",
+     "product": "OLAIF ALCOHOL WET WIPES 10S",
+     "qty": 85,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 1150,
+     "dpp": 97750,
+     "ppn": null,
+     "total": 97750
+    },
+    {
+     "store_code": "1005",
+     "store_name": "AEON Deltamas",
+     "product": "OLAIF POWERFUL CLEANING LIQUID DETERGENT 1000 ML",
+     "qty": 11,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 4800,
+     "dpp": 52800,
+     "ppn": null,
+     "total": 52800
+    },
+    {
+     "store_code": "1005",
+     "store_name": "AEON Deltamas",
+     "product": "OLAIF ANTISEPTIC WET WIPES 20S",
+     "qty": 75,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 1150,
+     "dpp": 86250,
+     "ppn": null,
+     "total": 86250
+    }
+   ]
+  }
+ ]
+}

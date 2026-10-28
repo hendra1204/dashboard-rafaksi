@@ -1,0 +1,213 @@
+{
+ "invoice": "26/VIII/038",
+ "supermarket": "PT Gracia Mitra Selaras",
+ "claim_lines": [
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 5 - 28 Feb 2026",
+   "filia_amount": 336162,
+   "supermarket_doc": "19876",
+   "program": "Discount (Excl.VAT) per Sales Performance by Supplier report",
+   "periode_mulai": "2026-02-05",
+   "periode_akhir": "2026-02-28",
+   "periode_text": "Period Sales : 05-FEB-26 - 28-FEB-26",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "12533163 OLAIF GENTLE CARE BABY WIPES",
+     "qty": 19,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 49468,
+     "ppn": null,
+     "total": 49468
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "12533181 OLAIF MULTI-SURFACE ANTIBACTERIAL CLEANE",
+     "qty": 3,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 7284,
+     "ppn": null,
+     "total": 7284
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "12533298 OLAIF TRIPLE BLADE WOMEN SHAVER",
+     "qty": 28,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 46667,
+     "ppn": null,
+     "total": 46667
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "12533136 OLAIF LIQUID HAND SOAP REFILL",
+     "qty": 2,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 1883,
+     "ppn": null,
+     "total": 1883
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "12533109 OLAIF ALCOHOL WET WIPES",
+     "qty": 17,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 17230,
+     "ppn": null,
+     "total": 17230
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "12533225 OLAIF PRO CLEAN TOOTHBRUSH MEDIUM 3PCS",
+     "qty": 17,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 41230,
+     "ppn": null,
+     "total": 41230
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "12533234 OLAIF PRO CLEAN TOOTHBRUSH SOFT 3PCS",
+     "qty": 14,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 33189,
+     "ppn": null,
+     "total": 33189
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "12533270 OLAIF SMOOTH ULTRA FLOSS",
+     "qty": 13,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 33027,
+     "ppn": null,
+     "total": 33027
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "14533490 OLAIF DISPOSABLE PLASTIC GLOVES",
+     "qty": 15,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 12095,
+     "ppn": null,
+     "total": 12095
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "14533525 OLAIF CLEANING SPONGE WHITE",
+     "qty": 2,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 1802,
+     "ppn": null,
+     "total": 1802
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "14533534 OLAIF CLEANING SPONGE GREEN",
+     "qty": 8,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 8288,
+     "ppn": null,
+     "total": 8288
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "14533543 OLAIF DURABLE CLEANING SPONGE",
+     "qty": 21,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 30081,
+     "ppn": null,
+     "total": 30081
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "14533552 OLAIF REUSABLE CLEANING GLOVE LARGE",
+     "qty": 7,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 13559,
+     "ppn": null,
+     "total": 13559
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "14533561 OLAIF REUSABLE CLEANING GLOVES MEDIUM",
+     "qty": 7,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 13559,
+     "ppn": null,
+     "total": 13559
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "14533570 OLAIF REUSABLE CLEANING GLOVES SMALL",
+     "qty": 7,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 13559,
+     "ppn": null,
+     "total": 13559
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 101 - HEMAT PLUZ",
+     "product": "14533445 OLAIF DOUBLE SEAL ZIPLOCK BAG 1.8L",
+     "qty": 6,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 13243,
+     "ppn": null,
+     "total": 13243
+    }
+   ],
+   "lampiran_total": 336162,
+   "check": "exact sum of claimed discount lines = 336162.16 -> 336162; sum of integer-rounded rows = 336164; Filia = 336162: OK",
+   "notes": "Attachment is Gracia 'Sales Performance by Supplier' report (salper_sp.rep), supplier 21550 PT Filia Sukses Mandiri, not a debit note; doc no. is the large stamped number. Store range (aggregated, no per-store split): 2 - MARKET CITY PIK to 101 - HEMAT PLUZ. Rows = Olaif SKUs whose 'Discount (Excl.VAT)' cell is highlighted/ticked; dpp/total = that discount, rounded to integer (exact 2-decimal values: 12533163=49468.47, 12533181=7283.78, 12533298=46666.67, 12533136=1882.88, 12533109=17229.73, 12533225=41229.73, 12533234=33189.19, 12533270=33027.03, 14533490=12094.59, 14533525=1801.80, 14533534=8288.29, 14533543=30081.08, 14533552=13558.56, 14533561=13558.56, 14533570=13558.56, 14533445=13243.24). qty = total Qty Sales of the SKU in the period (not necessarily promo qty). No PPN added; report's discount column is excl. VAT and Filia invoices it without VAT. Implied disc rates (derived, not printed): 12533163: disc 49468.47 / sales 494684.68 = 10.00%; 12533181: disc 7283.78 / sales 72837.84 = 10.00%; 12533298: disc 46666.67 / sales 466666.67 = 10.00%; 12533136: disc 1882.88 / sales 37657.66 = 5.00%; 12533109: disc 17229.73 / sales 172297.30 = 10.00%; 12533225: disc 41229.73 / sales 412364.86 = 10.00%; 12533234: disc 33189.19 / sales 330450.45 = 10.04%; 12533270: disc 33027.03 / sales 330270.27 = 10.00%; 14533490: disc 12094.59 / sales 241891.89 = 5.00%; 14533525: disc 1801.80 / sales 20720.72 = 8.70%; 14533534: disc 8288.29 / sales 82882.88 = 10.00%; 14533543: disc 30081.08 / sales 300810.81 = 10.00%; 14533552: disc 13558.56 / sales 135585.59 = 10.00%; 14533561: disc 13558.56 / sales 135585.59 = 10.00%; 14533570: disc 13558.56 / sales 135585.59 = 10.00%; 14533445: disc 13243.24 / sales 116216.22 = 11.40%. Exact 336,162.16 -> 336,162 OK. EXCLUDED: two Olaif discounts that are boxed but not ticked: 12533118 OLAIF ANTISEPTIC WET WIPES 4,391.89 (1.1% of sales) and 13533330 OLAIF POWER BLEACH 3,333.33 (0.9% of sales); Filia matches only with both excluded (with them it would be 343,887.38, +7,725.22). COVER ANOMALY: Filia's typed amounts are overwritten by hand to '336.162' (also handwritten on the last report page), but the printed Terbilang still reads 'empat ratus enam puluh enam ribu tiga ratus lima belas rupiah' = 466,315 - the words were not updated (difference 130,153). Subtotals verified: home arrangement 80,846.85; toothbrushes 107,445.95; wipes 21,621.62; Dept 12 350,110 incl VAT = 315,414.42 x 1.11; Dept 14 117,865 = 106,184.68 x 1.11. Report pages 3,4,5,6 of 6 attached (pages 1-2 not attached)."
+  }
+ ]
+}

@@ -1,0 +1,326 @@
+{
+ "invoice": "26/VIII/046",
+ "supermarket": "PT Aeon Indonesia",
+ "claim_lines": [
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode Juni 2026",
+   "filia_amount": 4571760,
+   "supermarket_doc": "V26-1009-0010039 / B26-1009-0012426",
+   "program": "Promo end user",
+   "periode_mulai": "2026-03-02",
+   "periode_akhir": "2026-03-29",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "1009",
+     "store_name": "AEON toko 1009",
+     "product": "OLAIF TOOTHPICK FLOSS CLASSIC",
+     "qty": 386,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2250,
+     "dpp": 868500,
+     "ppn": null,
+     "total": 868500
+    },
+    {
+     "store_code": "1009",
+     "store_name": "AEON toko 1009",
+     "product": "OLAIF TOOTHPASTE COMPLETE CARE",
+     "qty": 174,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 3550,
+     "dpp": 617700,
+     "ppn": null,
+     "total": 617700
+    },
+    {
+     "store_code": "1009",
+     "store_name": "AEON toko 1009",
+     "product": "OLAIF DENTAL SENSITIVE TOOTHPASTE 200GR",
+     "qty": 126,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 5380,
+     "dpp": 677880,
+     "ppn": null,
+     "total": 677880
+    },
+    {
+     "store_code": "1009",
+     "store_name": "AEON toko 1009",
+     "product": "OLAIF PURPLE TOOTHPASTE 200GR",
+     "qty": 214,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 4200,
+     "dpp": 898800,
+     "ppn": null,
+     "total": 898800
+    },
+    {
+     "store_code": "1009",
+     "store_name": "AEON toko 1009",
+     "product": "OLAIF MEN SHAVER TRIPLE BLADE 5S",
+     "qty": 237,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 3000,
+     "dpp": 711000,
+     "ppn": null,
+     "total": 711000
+    },
+    {
+     "store_code": "1009",
+     "store_name": "AEON toko 1009",
+     "product": "OLAIF WOMEN SHAVER TRIPLE BLADE 3S",
+     "qty": 366,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2180,
+     "dpp": 797880,
+     "ppn": null,
+     "total": 797880
+    }
+   ]
+  },
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode Juli 2026",
+   "filia_amount": 3661170,
+   "supermarket_doc": "V26-1014-0005515 / SKP_B26-1014-0005517",
+   "program": "Member Day",
+   "periode_mulai": "2026-04-01",
+   "periode_akhir": "2026-06-30",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "1014",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF MEN SHAVER TRIPLE BLADE 5S",
+     "qty": 165,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 302400,
+     "ppn": null,
+     "total": 302400
+    },
+    {
+     "store_code": "1014",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF WOMEN SHAVER TRIPLE BLADE 3S",
+     "qty": 470,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 528600,
+     "ppn": null,
+     "total": 528600
+    },
+    {
+     "store_code": "1014",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF TOOTHBRUSH PRO CLEAN SOFT",
+     "qty": 227,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 145280,
+     "ppn": null,
+     "total": 145280
+    },
+    {
+     "store_code": "1014",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF TOOTHBRUSH PRO CLEAN SOFT 3PCS",
+     "qty": 395,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 583800,
+     "ppn": null,
+     "total": 583800
+    },
+    {
+     "store_code": "1014",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF TOOTHPASTE COMPLETE CARE",
+     "qty": 139,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 246275,
+     "ppn": null,
+     "total": 246275
+    },
+    {
+     "store_code": "1014",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF TOOTHPICK FLOSS CLASSIC",
+     "qty": 561,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 631125,
+     "ppn": null,
+     "total": 631125
+    },
+    {
+     "store_code": "1014",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF FLOSS SMOOTH ULTRA",
+     "qty": 283,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 448500,
+     "ppn": null,
+     "total": 448500
+    },
+    {
+     "store_code": "1014",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF DENTAL SENSITIVE TOOTHPASTE 200GR",
+     "qty": 86,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 231340,
+     "ppn": null,
+     "total": 231340
+    },
+    {
+     "store_code": "1014",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF PURPLE TOOTHPASTE 200GR",
+     "qty": 299,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 543850,
+     "ppn": null,
+     "total": 543850
+    }
+   ]
+  },
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode Juni 2026",
+   "filia_amount": 370650,
+   "supermarket_doc": "V26-7002-0002310 / B26-7002-0003050",
+   "program": "Promo end user",
+   "periode_mulai": "2026-03-05",
+   "periode_akhir": "2026-03-18",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "7002",
+     "store_name": "AEON toko 7002",
+     "product": "OLAIF ACTIVE LAUNDRY PODS 240 GR",
+     "qty": 15,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2800,
+     "dpp": 42000,
+     "ppn": null,
+     "total": 42000
+    },
+    {
+     "store_code": "7002",
+     "store_name": "AEON toko 7002",
+     "product": "OLAIF POWER BLEACH TOILET CLEANER 500 ML",
+     "qty": 85,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2480,
+     "dpp": 210800,
+     "ppn": null,
+     "total": 210800
+    },
+    {
+     "store_code": "7002",
+     "store_name": "AEON toko 7002",
+     "product": "OLAIF POWERFUL CLEANING LIQUID DETERGENT 1000 ML",
+     "qty": 24,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 4150,
+     "dpp": 99600,
+     "ppn": null,
+     "total": 99600
+    },
+    {
+     "store_code": "7002",
+     "store_name": "AEON toko 7002",
+     "product": "OLAIF MULTI SURFACE ANTIBACTERIAL CLEANER 500 ML",
+     "qty": 10,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 1825,
+     "dpp": 18250,
+     "ppn": null,
+     "total": 18250
+    }
+   ]
+  },
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 19 Maret - 1 April 2026",
+   "filia_amount": 480050,
+   "supermarket_doc": "B26-7003-0003226",
+   "program": "Promo end user",
+   "periode_mulai": "2026-03-19",
+   "periode_akhir": "2026-04-01",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "7003",
+     "store_name": "AEON Health & Beauty BXC",
+     "product": "OLAIF ACTIVE LAUNDRY PODS 240 GR",
+     "qty": 16,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2800,
+     "dpp": 44800,
+     "ppn": null,
+     "total": 44800
+    },
+    {
+     "store_code": "7003",
+     "store_name": "AEON Health & Beauty BXC",
+     "product": "OLAIF POWER BLEACH TOILET CLEANER 500 ML",
+     "qty": 115,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2480,
+     "dpp": 285200,
+     "ppn": null,
+     "total": 285200
+    },
+    {
+     "store_code": "7003",
+     "store_name": "AEON Health & Beauty BXC",
+     "product": "OLAIF POWERFUL CLEANING LIQUID DETERGENT 1000 ML",
+     "qty": 30,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 4150,
+     "dpp": 124500,
+     "ppn": null,
+     "total": 124500
+    },
+    {
+     "store_code": "7003",
+     "store_name": "AEON Health & Beauty BXC",
+     "product": "OLAIF MULTI SURFACE ANTIBACTERIAL CLEANER 500 ML",
+     "qty": 14,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 1825,
+     "dpp": 25550,
+     "ppn": null,
+     "total": 25550
+    }
+   ]
+  }
+ ]
+}

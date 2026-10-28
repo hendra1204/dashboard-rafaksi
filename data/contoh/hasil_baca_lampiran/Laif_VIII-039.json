@@ -1,0 +1,314 @@
+{
+ "invoice": "26/VIII/039",
+ "supermarket": "PT Aeon Indonesia",
+ "claim_lines": [
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 8 Des - 4 Jan 26",
+   "filia_amount": 3932740,
+   "supermarket_doc": "V26-1001-0009044 / B26-1001-0009514",
+   "program": "Promo end user",
+   "periode_mulai": "2025-12-08",
+   "periode_akhir": "2026-01-04",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "1001",
+     "store_name": "AEON BSD City",
+     "product": "OLAIF TOOTHPASTE COMPLETE CARE",
+     "qty": 164,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 3550,
+     "dpp": 582200,
+     "ppn": null,
+     "total": 582200
+    },
+    {
+     "store_code": "1001",
+     "store_name": "AEON BSD City",
+     "product": "OLAIF FLOSS SMOOTH ULTRA",
+     "qty": 202,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 3380,
+     "dpp": 682760,
+     "ppn": null,
+     "total": 682760
+    },
+    {
+     "store_code": "1001",
+     "store_name": "AEON BSD City",
+     "product": "OLAIF DENTAL SENSITIVE TOOTHPASTE 200GR",
+     "qty": 110,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 5380,
+     "dpp": 591800,
+     "ppn": null,
+     "total": 591800
+    },
+    {
+     "store_code": "1001",
+     "store_name": "AEON BSD City",
+     "product": "OLAIF WOMEN SHAVER TRIPLE BLADE 3S",
+     "qty": 461,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2180,
+     "dpp": 1004980,
+     "ppn": null,
+     "total": 1004980
+    },
+    {
+     "store_code": "1001",
+     "store_name": "AEON BSD City",
+     "product": "OLAIF TOOTHBRUSH PRO CLEAN SOFT 3PCS",
+     "qty": 340,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 3150,
+     "dpp": 1071000,
+     "ppn": null,
+     "total": 1071000
+    }
+   ]
+  },
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode Jan - Mar 26",
+   "filia_amount": 1266860,
+   "supermarket_doc": "V26-1004-0008542 / SKP_B26-1004-0011429",
+   "program": "Member Day",
+   "periode_mulai": "2026-01-01",
+   "periode_akhir": "2026-03-31",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "1004",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF MULTI SURFACE ANTIBACTERIAL CLEANER 500 ML",
+     "qty": 29,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 52325,
+     "ppn": null,
+     "total": 52325
+    },
+    {
+     "store_code": "1004",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF MULTI SURFACE ANTIBACTERIAL CLEANER REF 500ML",
+     "qty": 40,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 57250,
+     "ppn": null,
+     "total": 57250
+    },
+    {
+     "store_code": "1004",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF ANTISEPTIC WET WIPES 20S",
+     "qty": 276,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 147900,
+     "ppn": null,
+     "total": 147900
+    },
+    {
+     "store_code": "1004",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF ALCOHOL WET WIPES 10S",
+     "qty": 121,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 66650,
+     "ppn": null,
+     "total": 66650
+    },
+    {
+     "store_code": "1004",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF POWER BLEACH TOILET CLEANER 500 ML",
+     "qty": 373,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 430180,
+     "ppn": null,
+     "total": 430180
+    },
+    {
+     "store_code": "1004",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF ACTIVE LAUNDRY PODS 240 GR",
+     "qty": 40,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 97000,
+     "ppn": null,
+     "total": 97000
+    },
+    {
+     "store_code": "1004",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF POWERFUL CLEANING LIQUID DETERGENT 1000 ML",
+     "qty": 44,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 89150,
+     "ppn": null,
+     "total": 89150
+    },
+    {
+     "store_code": "1004",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF GENTLE CARE BABY WIPES 80S",
+     "qty": 119,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 179000,
+     "ppn": null,
+     "total": 179000
+    },
+    {
+     "store_code": "1004",
+     "store_name": "Semua toko (Member Day)",
+     "product": "OLAIF POWERFUL CLEAN LIQ DETERGENT REFF 1000ML",
+     "qty": 78,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 147405,
+     "ppn": null,
+     "total": 147405
+    }
+   ]
+  },
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 8 - 21 Jan 26",
+   "filia_amount": 485275,
+   "supermarket_doc": "V26-1006-0008439 / B26-1006-0010801",
+   "program": "Promo end user",
+   "periode_mulai": "2026-01-08",
+   "periode_akhir": "2026-01-21",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "1006",
+     "store_name": "AEON toko 1006",
+     "product": "OLAIF ACTIVE LAUNDRY PODS 240 GR",
+     "qty": 13,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2475,
+     "dpp": 32175,
+     "ppn": null,
+     "total": 32175
+    },
+    {
+     "store_code": "1006",
+     "store_name": "AEON toko 1006",
+     "product": "OLAIF ANTISEPTIC WET WIPES 20S",
+     "qty": 154,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 1150,
+     "dpp": 177100,
+     "ppn": null,
+     "total": 177100
+    },
+    {
+     "store_code": "1006",
+     "store_name": "AEON toko 1006",
+     "product": "OLAIF POWER BLEACH TOILET CLEANER 500 ML",
+     "qty": 90,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2480,
+     "dpp": 223200,
+     "ppn": null,
+     "total": 223200
+    },
+    {
+     "store_code": "1006",
+     "store_name": "AEON toko 1006",
+     "product": "OLAIF POWERFUL CLEANING LIQUID DETERGENT 1000 ML",
+     "qty": 11,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 4800,
+     "dpp": 52800,
+     "ppn": null,
+     "total": 52800
+    }
+   ]
+  },
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 22 Jan - 4 Feb 26",
+   "filia_amount": 488890,
+   "supermarket_doc": "B26-1010-0007218",
+   "program": "Promo end user",
+   "periode_mulai": "2026-01-22",
+   "periode_akhir": "2026-02-04",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "1010",
+     "store_name": "AEON Eastvara",
+     "product": "OLAIF ACTIVE LAUNDRY PODS 240 GR",
+     "qty": 10,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2475,
+     "dpp": 24750,
+     "ppn": null,
+     "total": 24750
+    },
+    {
+     "store_code": "1010",
+     "store_name": "AEON Eastvara",
+     "product": "OLAIF ANTISEPTIC WET WIPES 20S",
+     "qty": 114,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 1150,
+     "dpp": 131100,
+     "ppn": null,
+     "total": 131100
+    },
+    {
+     "store_code": "1010",
+     "store_name": "AEON Eastvara",
+     "product": "OLAIF POWER BLEACH TOILET CLEANER 500 ML",
+     "qty": 113,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 2480,
+     "dpp": 280240,
+     "ppn": null,
+     "total": 280240
+    },
+    {
+     "store_code": "1010",
+     "store_name": "AEON Eastvara",
+     "product": "OLAIF POWERFUL CLEANING LIQUID DETERGENT 1000 ML",
+     "qty": 11,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": 4800,
+     "dpp": 52800,
+     "ppn": null,
+     "total": 52800
+    }
+   ]
+  }
+ ]
+}

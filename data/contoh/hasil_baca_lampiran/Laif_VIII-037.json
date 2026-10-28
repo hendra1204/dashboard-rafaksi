@@ -1,0 +1,129 @@
+{
+ "invoice": "26/VIII/037",
+ "supermarket": "PT Gracia Mitra Selaras",
+ "claim_lines": [
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 4 - 30 Mar 2026",
+   "filia_amount": 244676,
+   "supermarket_doc": "19978",
+   "program": "Discount (Excl.VAT) per Sales Performance by Supplier report",
+   "periode_mulai": "2026-03-04",
+   "periode_akhir": "2026-03-31",
+   "periode_text": "Period Sales : 04-MAR-26 - 31-MAR-26",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 6 - MARKET CITY CIBUBUR",
+     "product": "12533172 OLAIF MULTI-SURFACE ANTIBACTERIAL CLEANS",
+     "qty": 4,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 6162,
+     "ppn": null,
+     "total": 6162
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 6 - MARKET CITY CIBUBUR",
+     "product": "12533289 OLAIF TRIPLE BLADE MENS SHAVER",
+     "qty": 14,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 34685,
+     "ppn": null,
+     "total": 34685
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 6 - MARKET CITY CIBUBUR",
+     "product": "12533298 OLAIF TRIPLE BLADE WOMEN SHAVER",
+     "qty": 24,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 40000,
+     "ppn": null,
+     "total": 40000
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 6 - MARKET CITY CIBUBUR",
+     "product": "12533216 OLAIF PRO CLEAN TOOTHBRUSH SOFT",
+     "qty": 13,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 6207,
+     "ppn": null,
+     "total": 6207
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 6 - MARKET CITY CIBUBUR",
+     "product": "12533510 OLAIF CLASSIC FLOSS TOOTHPICK",
+     "qty": 52,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 88640,
+     "ppn": null,
+     "total": 88640
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 6 - MARKET CITY CIBUBUR",
+     "product": "13533330 OLAIF POWER BLEACH TOILET CLEANSER",
+     "qty": 8,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 17153,
+     "ppn": null,
+     "total": 17153
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 6 - MARKET CITY CIBUBUR",
+     "product": "13581529 OLAIF ACTIVE LAUNDRY PODS",
+     "qty": 14,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 27054,
+     "ppn": null,
+     "total": 27054
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 6 - MARKET CITY CIBUBUR",
+     "product": "14533481 OLAIF MULTI PURPOSE MAGIC SPONGE",
+     "qty": 6,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 17027,
+     "ppn": null,
+     "total": 17027
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 6 - MARKET CITY CIBUBUR",
+     "product": "14533445 OLAIF DOUBLE SEAL ZIPLOCK BAG 1.8L",
+     "qty": 4,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 7748,
+     "ppn": null,
+     "total": 7748
+    }
+   ],
+   "lampiran_total": 244676,
+   "check": "exact sum of claimed discount lines = 244675.67 -> 244676; sum of integer-rounded rows = 244676; Filia = 244676: OK",
+   "notes": "Attachment is Gracia 'Sales Performance by Supplier' report (salper_sp.rep), supplier 21550 PT Filia Sukses Mandiri, not a debit note; doc no. is the large stamped number. Store range (aggregated, no per-store split): 2 - MARKET CITY PIK to 6 - MARKET CITY CIBUBUR. Rows = Olaif SKUs whose 'Discount (Excl.VAT)' cell is highlighted/ticked; dpp/total = that discount, rounded to integer (exact 2-decimal values: 12533172=6162.16, 12533289=34684.68, 12533298=40000.00, 12533216=6207.21, 12533510=88639.64, 13533330=17153.15, 13581529=27054.05, 14533481=17027.03, 14533445=7747.75). qty = total Qty Sales of the SKU in the period (not necessarily promo qty). No PPN added; report's discount column is excl. VAT and Filia invoices it without VAT. Implied disc rates (derived, not printed): 12533172: disc 6162.16 / sales 123243.24 = 5.00%; 12533289: disc 34684.68 / sales 346846.85 = 10.00%; 12533298: disc 40000.00 / sales 400000.00 = 10.00%; 12533216: disc 6207.21 / sales 124144.14 = 5.00%; 12533510: disc 88639.64 / sales 886576.58 = 10.00%; 13533330: disc 17153.15 / sales 171531.53 = 10.00%; 13581529: disc 27054.05 / sales 541081.08 = 5.00%; 14533481: disc 17027.03 / sales 170270.27 = 10.00%; 14533445: disc 7747.75 / sales 77477.48 = 10.00%. PERIOD LABEL: Filia says '4 - 30 Mar 2026' but the attachment period is 04-MAR-26 - 31-MAR-26. Exact 244,675.67 -> 244,676 OK. Razors subclass prints 74,684.69 vs lines 34,684.68 + 40,000.00 = 74,684.68 (report's own rounding). Dept 12 195,020 incl VAT = 175,693.70 x 1.11; Dept 13 411,410 = 370,639.64 x 1.11; Dept 14 27,500 = 24,774.78 x 1.11 - all consistent. DR SOAP discounts (vegetable wash 60,675.68, floor sprays) are not Olaif and not claimed. Report pages 3,4,5,6 of 6 attached (pages 1-2 not attached)."
+  }
+ ]
+}

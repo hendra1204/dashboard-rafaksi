@@ -1,0 +1,14 @@
+# Rahasia — JANGAN commit / share
+.env
+.streamlit/secrets.toml
+
+# Output lokal
+output/
+__pycache__/
+*.pyc
+
+# Tidak perlu / terlalu besar untuk cloud
+tools/
+data/invoice/
+input/
+*.zip

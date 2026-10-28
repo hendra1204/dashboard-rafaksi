@@ -1,0 +1,33 @@
+{
+ "invoice": "26/VIII/035",
+ "supermarket": "PT Supra Boga Lestari",
+ "claim_lines": [
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 11 - 30 Juni 2026",
+   "filia_amount": 311625,
+   "supermarket_doc": "Debit Note No. 21000175?? (faint dot-matrix; reads approx. 2100017559) dated 13.07.2026",
+   "program": "Refaksi OLAIF ACTIVE 11-30/6/2026",
+   "periode_mulai": "2026-06-11",
+   "periode_akhir": "2026-06-30",
+   "periode_text": "Refaksi OLAIF ACTIVE 11-30/6/2026",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": null,
+     "store_name": null,
+     "product": null,
+     "qty": null,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 311625,
+     "ppn": null,
+     "total": 311625
+    }
+   ],
+   "lampiran_total": 311625,
+   "check": "rows sum = lampiran_total = filia_amount: OK",
+   "notes": "Debit note shows only a single line and total (311,625, confirmed by \"Say: tiga ratus sebelas ribu enam ratus dua puluh lima rupiah\"). No per-store/per-product attachment included in the PDF. Last digits of the DN number are illegible even at full resolution. PPN not shown."
+  }
+ ]
+}

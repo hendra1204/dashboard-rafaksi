@@ -1,0 +1,105 @@
+{
+ "invoice": "26/VIII/036",
+ "supermarket": "PT Gracia Mitra Selaras",
+ "claim_lines": [
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 16 - 30 Apr 2026",
+   "filia_amount": 141233,
+   "supermarket_doc": "20146",
+   "program": "Discount (Excl.VAT) per Sales Performance by Supplier report",
+   "periode_mulai": "2026-04-16",
+   "periode_akhir": "2026-04-30",
+   "periode_text": "Period Sales : 16-APR-26 - 30-APR-26",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "12533289 OLAIF TRIPLE BLADE MENS SHAVER",
+     "qty": 1,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 2477,
+     "ppn": null,
+     "total": 2477
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "12533118 OLAIF ANTISEPTIC WET WIPES",
+     "qty": 22,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 21604,
+     "ppn": null,
+     "total": 21604
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "12533510 OLAIF CLASSIC FLOSS TOOTHPICK",
+     "qty": 41,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 69892,
+     "ppn": null,
+     "total": 69892
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "13533330 OLAIF POWER BLEACH TOILET CLEANSER",
+     "qty": 7,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 15009,
+     "ppn": null,
+     "total": 15009
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "14533490 OLAIF DISPOSABLE PLASTIC GLOVES",
+     "qty": 8,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 12901,
+     "ppn": null,
+     "total": 12901
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "14533481 OLAIF MULTI PURPOSE MAGIC SPONGE",
+     "qty": 4,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 11351,
+     "ppn": null,
+     "total": 11351
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "14533418 OLAIF DOUBLE SEAL ZIPLOCK BAG 1.3L",
+     "qty": 6,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 8000,
+     "ppn": null,
+     "total": 8000
+    }
+   ],
+   "lampiran_total": 141234,
+   "check": "exact sum of claimed discount lines = 141234.23 -> 141234; sum of integer-rounded rows = 141234; Filia = 141233: Filia differs by -1 (exact diff -1.23)",
+   "notes": "Attachment is Gracia 'Sales Performance by Supplier' report (salper_sp.rep), supplier 21550 PT Filia Sukses Mandiri, not a debit note; doc no. is the large stamped number. Store range (aggregated, no per-store split): 2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL. Rows = Olaif SKUs whose 'Discount (Excl.VAT)' cell is highlighted/ticked; dpp/total = that discount, rounded to integer (exact 2-decimal values: 12533289=2477.48, 12533118=21603.60, 12533510=69891.89, 13533330=15009.01, 14533490=12900.90, 14533481=11351.35, 14533418=8000.00). qty = total Qty Sales of the SKU in the period (not necessarily promo qty). No PPN added; report's discount column is excl. VAT and Filia invoices it without VAT. Implied disc rates (derived, not printed): 12533289: disc 2477.48 / sales 24774.77 = 10.00%; 12533118: disc 21603.60 / sales 218036.04 = 9.91%; 12533510: disc 69891.89 / sales 699031.53 = 10.00%; 13533330: disc 15009.01 / sales 150090.09 = 10.00%; 14533490: disc 12900.90 / sales 129009.01 = 10.00%; 14533481: disc 11351.35 / sales 113513.51 = 10.00%; 14533418: disc 8000.00 / sales 80000.00 = 10.00%. DOES NOT RECONCILE EXACTLY: exact sum of the 7 ticked lines is 141,234.23 but Filia billed 141,233 - Filia is short by 1.23 (1 rupiah after rounding). Every line is confirmed by printed totals (Dept 12 104,310 incl VAT = 93,972.97 x 1.11 = 2,477.48+21,603.60+69,891.89; Dept 13 16,660 = 15,009.01 x 1.11; Dept 14 35,800 = 32,252.25 x 1.11), so the shortfall is a Filia arithmetic/rounding slip, not a misread. Report pages 3,4,5 of 5 attached (pages 1-2 not attached)."
+  }
+ ]
+}

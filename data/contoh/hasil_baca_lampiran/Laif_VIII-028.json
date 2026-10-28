@@ -1,0 +1,153 @@
+{
+ "invoice": "26/VIII/028",
+ "supermarket": "PT Gracia Mitra Selaras",
+ "claim_lines": [
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 1 - 30 Mar 2025",
+   "filia_amount": 722907,
+   "supermarket_doc": "18571",
+   "program": "Discount (Excl.VAT) per Sales Performance by Supplier report",
+   "periode_mulai": "2025-03-01",
+   "periode_akhir": "2025-03-30",
+   "periode_text": "Period Sales : 01-MAR-25 - 30-MAR-25",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "12533181 OLAIF MULTI-SURFACE ANTIBACTERIAL CLEANE",
+     "qty": 1,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 2450,
+     "ppn": null,
+     "total": 2450
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "12533289 OLAIF TRIPLE BLADE MENS SHAVER",
+     "qty": 47,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 116441,
+     "ppn": null,
+     "total": 116441
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "12533109 OLAIF ALCOHOL WET WIPES",
+     "qty": 182,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 186730,
+     "ppn": null,
+     "total": 186730
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "12584359 OLAIF SENSITIVE CARE TOOTHPASTE 200G",
+     "qty": 15,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 88488,
+     "ppn": null,
+     "total": 88488
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "12533225 OLAIF PRO CLEAN TOOTHBRUSH MEDIUM 3PCS",
+     "qty": 7,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 16662,
+     "ppn": null,
+     "total": 16662
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "12533234 OLAIF PRO CLEAN TOOTHBRUSH SOFT 3PCS",
+     "qty": 22,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 50887,
+     "ppn": null,
+     "total": 50887
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "13533330 OLAIF POWER BLEACH TOILET CLEANSER",
+     "qty": 21,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 45099,
+     "ppn": null,
+     "total": 45099
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "13581529 OLAIF ACTIVE LAUNDRY PODS",
+     "qty": 25,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 136311,
+     "ppn": null,
+     "total": 136311
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "14533481 OLAIF MULTI PURPOSE MAGIC SPONGE",
+     "qty": 15,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 42568,
+     "ppn": null,
+     "total": 42568
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "14533561 OLAIF REUSABLE CLEANING GLOVES MEDIUM",
+     "qty": 6,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 11622,
+     "ppn": null,
+     "total": 11622
+    },
+    {
+     "store_code": null,
+     "store_name": "2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL",
+     "product": "14533454 OLAIF DOUBLE SEAL ZIPLOCK BAG 3.5L",
+     "qty": 9,
+     "harga": null,
+     "disc_pct": null,
+     "rafaksi_per_pcs": null,
+     "dpp": 25649,
+     "ppn": null,
+     "total": 25649
+    }
+   ],
+   "lampiran_total": 722907,
+   "check": "exact sum of claimed discount lines = 722907.21 -> 722907; sum of integer-rounded rows = 722907; Filia = 722907: OK",
+   "notes": "Attachment is Gracia 'Sales Performance by Supplier' report (salper_sp.rep), supplier 21550 PT Filia Sukses Mandiri, not a debit note; doc no. is the large stamped number. Store range (aggregated, no per-store split): 2 - MARKET CITY PIK to 8 - MARKET CITY SANUR BL. Rows = Olaif SKUs whose 'Discount (Excl.VAT)' cell is highlighted/ticked; dpp/total = that discount, rounded to integer (exact 2-decimal values: 12533181=2450.45, 12533289=116441.44, 12533109=186729.73, 12584359=88488.29, 12533225=16662.16, 12533234=50887.39, 13533330=45099.10, 13581529=136310.81, 14533481=42567.57, 14533561=11621.62, 14533454=25648.65). qty = total Qty Sales of the SKU in the period (not necessarily promo qty). No PPN added; report's discount column is excl. VAT and Filia invoices it without VAT. Implied disc rates (derived, not printed): 12533181: disc 2450.45 / sales 24504.50 = 10.00%; 12533289: disc 116441.44 / sales 1164414.42 = 10.00%; 12533109: disc 186729.73 / sales 1867297.30 = 10.00%; 12584359: disc 88488.29 / sales 589954.96 = 15.00%; 12533225: disc 16662.16 / sales 166621.62 = 10.00%; 12533234: disc 50887.39 / sales 508873.87 = 10.00%; 13533330: disc 45099.10 / sales 450990.99 = 10.00%; 13581529: disc 136310.81 / sales 908738.74 = 15.00%; 14533481: disc 42567.57 / sales 425675.67 = 10.00%; 14533561: disc 11621.62 / sales 116216.22 = 10.00%; 14533454: disc 25648.65 / sales 256486.49 = 10.00%. YEAR CHECK: the attachment really says 2025 (Period Sales 01-MAR-25 - 30-MAR-25, printed 24-SEP-25), so Filia's '2025' label is correct - this is an old (17-month) claim billed in Aug 2026. Report is 'Page x to 7'; only pages 2,4,5,6 are attached - pages 1, 3 and 7 are missing. Page 3 would hold the rest of Dept 12 (hair care / hand & body); per the printed totals there is 5,960.77 (excl VAT) of Class 4 discount and ~144,841 of Dept 12 discount on that missing page, so it cannot be confirmed whether any Olaif discount there was left out. EXCLUDED: 12533118 OLAIF ANTISEPTIC WET WIPES discount 495.99 (highlighted, not ticked; digits blurry, value inferred = subclass total 187,225.72 - 186,729.73). Filia's 722,907 matches exactly (722,907.21) only with that line excluded, so Laif may be under-billed by ~496 if it was a valid promo line. BIYU 12589096 discount 1,315.32 is bracketed with the Olaif line but is not Olaif and was not claimed. Subclass/class/dept totals cross-checked: Dept 13 383,675 and Dept 14 88,620 (dept totals are printed incl VAT, = ex-VAT x 1.11) match the claimed lines exactly."
+  }
+ ]
+}

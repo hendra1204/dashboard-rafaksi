@@ -1,0 +1,29 @@
+PROMPT PERTAMA (salin dan tempel ke Claude Code):
+
+Baca CLAUDE.md dan semua file di folder data/. Saya ingin membangun dashboard
+Streamlit untuk mengecek tagihan klaim rafaksi dari distributor terhadap
+kesepakatan disc rafraksi, seperti dijelaskan di CLAUDE.md.
+
+Fitur:
+1. Unggah file kesepakatan (Excel) dan PDF invoice.
+2. Baca lampiran PDF scan per baris memakai Claude API (vision), simpan ke cache.
+3. Cocokkan dengan disc kesepakatan per PT, produk, dan bulan; beri status
+   Sesuai / Perlu konfirmasi / Di luar kesepakatan; cek klaim dobel.
+4. Tampilan: ringkasan total, tabel per supermarket, daftar temuan dengan
+   tombol Terima/Tahan/Tolak, dan tampilan per toko x periode (garis waktu).
+5. Simpan keputusan finance dan ekspor hasil ke Excel seperti contoh v5.
+
+Jangan menulis kode dulu. Buat rencana kerja bertahap, lalu tanyakan ke saya
+hal yang belum jelas.
+
+
+PROMPT LANJUTAN (pakai satu per satu setelah rencana disetujui):
+
+- Lanjut tahap 1: baca file kesepakatan menjadi satu tabel rapi, lalu tunjukkan ringkasannya.
+- Uji pencocokan memakai data/contoh/hasil_baca_lampiran (tanpa API). Bandingkan hasilnya
+  dengan Rekap v5: totalnya harus sama, termasuk Rp 12.072.080 perlu konfirmasi dan
+  Rp 1.004.980 di luar kesepakatan.
+- Buat tampilan dashboard-nya, lalu beri tahu saya perintah untuk menjalankannya.
+- Sekarang sambungkan pembacaan PDF dengan Claude API. Uji dengan 2 PDF dulu
+  (Laif VIII-027 dan 040) dan bandingkan dengan JSON di data/contoh.
+- Tambahkan penyimpanan keputusan finance dan ekspor ke Excel.

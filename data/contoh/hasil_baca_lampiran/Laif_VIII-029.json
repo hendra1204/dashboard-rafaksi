@@ -1,0 +1,45 @@
+{
+ "invoice": "26/VIII/029",
+ "supermarket": "PT Paligies Internasional",
+ "claim_lines": [
+  {
+   "filia_label": "Claim Rafaksi Olaif Periode 1 - 30 Apr 2026",
+   "filia_amount": 54000,
+   "supermarket_doc": "Kwitansi Jakarta Fruit Market dated 18-05-2026 (no doc number printed), Rp 92.480; attachment \"RAFAKSI PT. FILIA SUKSES MANDIRI PERIODE 01-30 APRIL 2026\"",
+   "program": "Rafaksi produk Clara Washing, Olaif Power (10% of harga jual)",
+   "periode_mulai": "2026-04-01",
+   "periode_akhir": "2026-04-30",
+   "periode_text": "PERIODE : 01 - 30 APRIL 2026",
+   "includes_ppn": false,
+   "rows": [
+    {
+     "store_code": "1",
+     "store_name": "Jakarta Fruit Market Pluit",
+     "product": "8993319190086 OLAIF POWER BLEACH TOILET CLEANER 500ML",
+     "qty": 5,
+     "harga": 22200,
+     "disc_pct": 0.1,
+     "rafaksi_per_pcs": 2220,
+     "dpp": 11100,
+     "ppn": null,
+     "total": 11100
+    },
+    {
+     "store_code": "1",
+     "store_name": "Jakarta Fruit Market Pluit",
+     "product": "8993319190031 OLAIF POWER CLEAN DETERGENT 1LT",
+     "qty": 11,
+     "harga": 39000,
+     "disc_pct": 0.1,
+     "rafaksi_per_pcs": 3900,
+     "dpp": 42900,
+     "ppn": null,
+     "total": 42900
+    }
+   ],
+   "lampiran_total": 54000,
+   "check": "rows sum = lampiran_total = filia_amount: OK",
+   "notes": "Supermarket kwitansi/attachment total is Rp 92.480 (24 pcs) and includes CLARA WASHING MACHINE CLEANER 500GR (8 x 48,100 x 10% = 38,480), a non-Olaif brand; Filia claims only the two Olaif lines (11,100 + 42,900 = 54,000) from Laif. Excluded Clara row = 38,480; 92,480 - 38,480 = 54,000. Store = Branch 1 Jakarta Fruit Market Pluit per sales report (page 4, qty matches 11/5/8). rafaksi_per_pcs derived (harga x 10%). No PPN shown."
+  }
+ ]
+}
