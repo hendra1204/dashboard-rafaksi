@@ -1,14 +1,12 @@
 """Penyimpanan keputusan finance (Terima / Tahan / Tolak + catatan).
 
 Dua backend, dipilih OTOMATIS:
-- Bila env ``SUPABASE_URL`` & ``SUPABASE_KEY`` ada  -> simpan ke **Supabase**
-  (Postgres). Dipakai saat dashboard di-host online (mis. Streamlit Cloud) agar
-  keputusan tersimpan permanen walau PC dimatikan.
-- Bila tidak ada                                   -> **SQLite** lokal di
-  ``output/keputusan.db`` (pemakaian di PC sendiri).
+- Bila env ``SUPABASE_URL`` & ``SUPABASE_KEY`` ada -> **Supabase** lewat REST API
+  (PostgREST), autentikasi dengan header ``apikey`` saja (cocok untuk kunci model
+  baru ``sb_secret_...`` maupun legacy). Dipakai saat online (Streamlit Cloud).
+- Bila tidak -> **SQLite** lokal di ``output/keputusan.db`` (pemakaian di PC).
 
-API sama untuk kedua backend: ``init, simpan, simpan_catatan, hapus, muat``.
-Satu baris per (batch, temuan).
+API sama: ``init, simpan, simpan_catatan, hapus, muat``. Satu baris per (batch, temuan).
 """
 from __future__ import annotations
 
@@ -23,21 +21,25 @@ DB_PATH = config.OUTPUT_DIR / "keputusan.db"
 STATUS_VALID = {"terima", "tahan", "tolak"}
 TABEL = "keputusan"
 
-_client = None  # cache client Supabase
+
+# --------------------------------------------------------------------------- Supabase REST
+def _rest_cfg():
+    """(url, key) bila Supabase dikonfigurasi, selainnya None."""
+    url = (os.getenv("SUPABASE_URL") or "").strip().rstrip("/")
+    key = (os.getenv("SUPABASE_KEY") or os.getenv("SUPABASE_SERVICE_KEY") or "").strip()
+    return (url, key) if url and key else None
 
 
-def _supabase():
-    """Client Supabase bila dikonfigurasi (env SUPABASE_URL & SUPABASE_KEY), selainnya None."""
-    global _client
-    if _client is not None:
-        return _client
-    url = os.getenv("SUPABASE_URL")
-    key = os.getenv("SUPABASE_KEY") or os.getenv("SUPABASE_SERVICE_KEY")
-    if not url or not key:
-        return None
-    from supabase import create_client  # impor lokal: hanya perlu di mode online
-    _client = create_client(url, key)
-    return _client
+def _rest(method: str, params=None, body=None, prefer=None):
+    import requests
+    url, key = _rest_cfg()
+    headers = {"apikey": key, "Content-Type": "application/json"}
+    if prefer:
+        headers["Prefer"] = prefer
+    r = requests.request(method, f"{url}/rest/v1/{TABEL}",
+                         headers=headers, params=params, json=body, timeout=20)
+    r.raise_for_status()
+    return r
 
 
 # --------------------------------------------------------------------------- SQLite lokal
@@ -65,7 +67,7 @@ def _init_sqlite() -> None:
 
 # --------------------------------------------------------------------------- API publik
 def init() -> None:
-    if _supabase() is None:
+    if _rest_cfg() is None:
         _init_sqlite()
 
 
@@ -75,12 +77,10 @@ def simpan(batch: str, temuan_id: str, status: str,
     if status not in STATUS_VALID:
         raise ValueError(f"status tidak sah: {status}")
     waktu = dt.datetime.now().isoformat(timespec="seconds")
-    sb = _supabase()
-    if sb is not None:
-        sb.table(TABEL).upsert({
-            "batch": batch, "temuan_id": temuan_id, "status": status,
-            "catatan": catatan, "oleh": oleh, "waktu": waktu,
-        }, on_conflict="batch,temuan_id").execute()
+    row = dict(batch=batch, temuan_id=temuan_id, status=status,
+               catatan=catatan, oleh=oleh, waktu=waktu)
+    if _rest_cfg():
+        _rest("POST", body=row, prefer="resolution=merge-duplicates,return=minimal")
         return
     _init_sqlite()
     with _conn() as c:
@@ -95,10 +95,9 @@ def simpan(batch: str, temuan_id: str, status: str,
 
 def simpan_catatan(batch: str, temuan_id: str, catatan: str) -> None:
     """Perbarui catatan saja (tanpa mengubah status) bila keputusan sudah ada."""
-    sb = _supabase()
-    if sb is not None:
-        sb.table(TABEL).update({"catatan": catatan}) \
-            .eq("batch", batch).eq("temuan_id", temuan_id).execute()
+    if _rest_cfg():
+        _rest("PATCH", params={"batch": f"eq.{batch}", "temuan_id": f"eq.{temuan_id}"},
+              body={"catatan": catatan}, prefer="return=minimal")
         return
     _init_sqlite()
     with _conn() as c:
@@ -107,9 +106,9 @@ def simpan_catatan(batch: str, temuan_id: str, catatan: str) -> None:
 
 
 def hapus(batch: str, temuan_id: str) -> None:
-    sb = _supabase()
-    if sb is not None:
-        sb.table(TABEL).delete().eq("batch", batch).eq("temuan_id", temuan_id).execute()
+    if _rest_cfg():
+        _rest("DELETE", params={"batch": f"eq.{batch}", "temuan_id": f"eq.{temuan_id}"},
+              prefer="return=minimal")
         return
     _init_sqlite()
     with _conn() as c:
@@ -118,14 +117,13 @@ def hapus(batch: str, temuan_id: str) -> None:
 
 def muat(batch: str) -> dict[str, dict]:
     """temuan_id -> {status, catatan, oleh, waktu} untuk satu batch."""
-    sb = _supabase()
-    if sb is not None:
-        res = sb.table(TABEL).select("temuan_id,status,catatan,oleh,waktu") \
-            .eq("batch", batch).execute()
-        rows = res.data or []
-        return {r["temuan_id"]: dict(status=r["status"], catatan=r.get("catatan") or "",
-                                     oleh=r.get("oleh") or "", waktu=r.get("waktu") or "")
-                for r in rows}
+    if _rest_cfg():
+        r = _rest("GET", params={"batch": f"eq.{batch}",
+                                 "select": "temuan_id,status,catatan,oleh,waktu"})
+        rows = r.json() or []
+        return {row["temuan_id"]: dict(status=row["status"], catatan=row.get("catatan") or "",
+                                       oleh=row.get("oleh") or "", waktu=row.get("waktu") or "")
+                for row in rows}
     _init_sqlite()
     with _conn() as c:
         rows = c.execute(
