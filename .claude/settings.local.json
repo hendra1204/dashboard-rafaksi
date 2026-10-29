@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ':*)",
+      "Bash(python scripts/invoice_GoogleAds.py input/)",
+      "Read(///WEBARQ-Storage/WEBARQ-FS/AI/Finance/**)",
+      "Read(///WEBARQ-Storage/WEBARQ-FS/AI/**)",
+      "Bash(mkdir -p ops-agent/scripts ops-agent/output ops-agent/logs)",
+      "Bash(touch ops-agent/scripts/.gitkeep ops-agent/output/.gitkeep ops-agent/logs/.gitkeep sign-agent/scripts/.gitkeep sign-agent/output/.gitkeep sign-agent/queue/.gitkeep credit-card/input/.gitkeep credit-card/output/.gitkeep facebook-ads/input/.gitkeep facebook-ads/output/.gitkeep google-ads/input/.gitkeep google-ads/output/.gitkeep marketplace-refund/input/.gitkeep marketplace-refund/output/.gitkeep)",
+      "Bash(grep -rn -iE \"\\(api[_-]?key|password|secret|token|client[_-]?secret|access[_-]?token\\)\\\\s*=\\\\s*['\\\\\"][^'\\\\\"]{8,}\" --include=\"*.py\" .)"
+    ]
+  }
+}

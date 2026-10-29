@@ -218,7 +218,19 @@ D = _load(REF_DATE.isoformat(), _src_version())
 if "sel_sm" not in st.session_state:
     st.session_state.sel_sm = "Aeon"
 
-decisions = keputusan.muat(BATCH_ID)          # {temuan_id: {status, catatan, ...}}
+try:
+    decisions = keputusan.muat(BATCH_ID)          # {temuan_id: {status, catatan, ...}}
+except Exception as _e:
+    _url = os.getenv("SUPABASE_URL", "(kosong)")
+    _keylen = len(os.getenv("SUPABASE_KEY") or "")
+    st.error(
+        "Gagal terhubung ke penyimpanan keputusan (Supabase).\n\n"
+        f"- SUPABASE_URL terbaca: `{_url}`\n"
+        f"- Panjang SUPABASE_KEY: {_keylen} karakter\n"
+        f"- Jenis error: `{type(_e).__name__}`\n"
+        f"- Pesan: `{_e}`"
+    )
+    st.stop()
 n_diputus = sum(1 for t in D["temuan"] if decisions.get(t["id"]))
 R = D["ringkasan"]
 
