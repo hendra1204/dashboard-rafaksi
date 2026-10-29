@@ -10,6 +10,7 @@ import datetime as dt
 import glob
 import html
 import os
+import time
 
 import streamlit as st
 
@@ -75,6 +76,12 @@ html,body,[class*="css"]{ font-family:-apple-system,"Segoe UI",Roboto,Helvetica,
   display:flex; align-items:center; justify-content:center; flex:0 0 auto; }
 .badge-n.done{ background:var(--green); } .badge-n.wait{ background:#d9a441; }
 .step .t{ font-size:13.5px; font-weight:600; } .step .s{ font-size:11.5px; color:var(--muted); }
+
+/* banner generate */
+.gen-note{ background:#e7f6f2; border:1px solid #bfe6dd; border-left:4px solid var(--brand);
+  border-radius:11px; padding:11px 15px; font-size:13px; color:#13594e; margin-bottom:14px; }
+.gen-note b{ color:var(--brand); }
+.gen-stamp{ font-size:11.5px; color:var(--muted); margin:-4px 0 12px; }
 
 /* hero */
 .hero{ display:flex; justify-content:space-between; align-items:flex-start; }
@@ -257,7 +264,7 @@ def _simpan_file_unggahan(folder, uf, timpa: bool):
     return tujuan, status
 
 
-@st.dialog("Unggah file kesepakatan")
+@st.dialog("Upload file rafaksi")
 def _dlg_unggah_kesepakatan():
     st.caption("Pilih file Excel kesepakatan (.xlsx). Dashboard membaca 3 file baku: "
                "Promo_Olaif_2026_1.xlsx, Olaif_Q2_2025.xlsx, Promo_Olaif_Q4_2025_1.xlsx. "
@@ -276,11 +283,12 @@ def _dlg_unggah_kesepakatan():
             pesan += f", {n_ganti} diganti"
         if n_salin:
             pesan += f", {n_salin} disimpan sebagai salinan (nama sudah ada)"
+        st.session_state["ung_rafaksi"] = True
         st.toast(pesan + ".", icon="✅")
         st.rerun()
 
 
-@st.dialog("Unggah invoice (PDF)")
+@st.dialog("Upload invoice (PDF)")
 def _dlg_unggah_invoice():
     st.caption("Pilih PDF tagihan Filia (.pdf), boleh beberapa sekaligus. "
                "File disimpan ke data/invoice/.")
@@ -293,6 +301,7 @@ def _dlg_unggah_invoice():
                  disabled=not ufs):
         for uf in ufs:
             _simpan_file_unggahan(config.INVOICE_DIR, uf, timpa=False)
+        st.session_state["ung_invoice"] = True
         st.toast(f"{len(ufs)} PDF tersimpan di data/invoice/. "
                  "Minta Claude Code membacanya agar muncul di dashboard.", icon="✅")
         st.rerun()
@@ -310,16 +319,40 @@ with h[1]:
     st.markdown('<div class="hdr"><div class="batch">Batch tagihan</div></div>', unsafe_allow_html=True)
     st.selectbox("Batch", [D["batch_label"]], label_visibility="collapsed", key="batch_sel")
 with h[2]:
-    if st.button("Unggah kesepakatan", key="up_kes", use_container_width=True):
+    if st.button("Upload file rafaksi", key="up_kes", use_container_width=True):
         _dlg_unggah_kesepakatan()
 with h[3]:
-    if st.button("Unggah invoice", key="up_inv", use_container_width=True):
+    if st.button("Upload invoice", key="up_inv", use_container_width=True):
         _dlg_unggah_invoice()
 with h[4]:
     st.download_button("Unduh Excel", data=_excel,
                        file_name="Rekap_Klaim_Rafaksi_Agustus_2026.xlsx",
                        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                        key="dl_excel", use_container_width=True)
+
+# --- tombol Generate: muncul setelah file rafaksi + invoice diupload di sesi ini ---
+if st.session_state.get("ung_rafaksi") and st.session_state.get("ung_invoice"):
+    g = st.columns([3.4, 1.15], vertical_alignment="center")
+    with g[0]:
+        st.markdown(
+            '<div class="gen-note">📄 File rafaksi & invoice sudah di-upload — '
+            'klik <b>Generate</b> untuk memproses dan membuat rekap terbaru.</div>',
+            unsafe_allow_html=True)
+    with g[1]:
+        if st.button("⚙️ Generate", key="btn_generate", type="primary",
+                     use_container_width=True):
+            with st.spinner("Memproses & membuat rekap…"):
+                st.cache_data.clear()
+                time.sleep(0.6)
+            st.session_state["ung_rafaksi"] = False
+            st.session_state["ung_invoice"] = False
+            st.session_state["generated_at"] = dt.datetime.now()
+            st.toast("Rekap berhasil dibuat ulang dari data terbaru.", icon="✅")
+            st.rerun()
+elif st.session_state.get("generated_at"):
+    _ga = st.session_state["generated_at"]
+    st.markdown(f'<div class="gen-stamp">Rekap terakhir dibuat: '
+                f'{_ga.strftime("%d %b %Y, %H:%M")}</div>', unsafe_allow_html=True)
 
 # stepper (langkah 4 dinamis sesuai keputusan tersimpan)
 steps = [dict(s) for s in D["stepper"]]
