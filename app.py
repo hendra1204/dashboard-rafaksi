@@ -16,7 +16,7 @@ import streamlit as st
 
 from dotenv import load_dotenv
 
-from src import config, ekspor, keputusan
+from src import config, ekspor, keputusan, penyimpanan
 from src.dashboard_data import siapkan_data
 from src.referensi import fmt_rp
 
@@ -221,6 +221,17 @@ def _gerbang_sandi():
 
 
 _gerbang_sandi()
+
+# Tarik file unggahan permanen dari Supabase Storage (sekali per sesi) supaya
+# file yang di-upload sebelumnya tidak hilang walau app cloud sempat restart.
+if penyimpanan.aktif() and not st.session_state.get("_sync_storage"):
+    try:
+        penyimpanan.sync_ke_lokal("kesepakatan", config.KESEPAKATAN_DIR)
+        penyimpanan.sync_ke_lokal("invoice", config.INVOICE_DIR)
+    except Exception:
+        pass
+    st.session_state["_sync_storage"] = True
+
 D = _load(REF_DATE.isoformat(), _src_version())
 if "sel_sm" not in st.session_state:
     st.session_state.sel_sm = "Aeon"
@@ -247,6 +258,9 @@ def _simpan_catatan(tid: str):
 
 
 # --------------------------------------------------------------------------- unggah
+MIME_XLSX = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+
+
 def _simpan_file_unggahan(folder, uf, timpa: bool):
     """Simpan satu file unggahan ke `folder`. Tidak menimpa file lain kecuali
     `timpa=True` (instruksi eksplisit user, mis. mengganti file kesepakatan baku).
@@ -274,7 +288,16 @@ def _dlg_unggah_kesepakatan():
     timpa = st.checkbox("Izinkan mengganti file lama yang namanya sama", value=False,
                         key="up_kes_timpa")
     if st.button("Simpan", key="up_kes_save", type="primary", disabled=not ufs):
-        hasil = [_simpan_file_unggahan(config.KESEPAKATAN_DIR, uf, timpa) for uf in ufs]
+        hasil = []
+        n_permanen = 0
+        for uf in ufs:
+            tujuan, status = _simpan_file_unggahan(config.KESEPAKATAN_DIR, uf, timpa)
+            hasil.append((tujuan, status))
+            try:
+                penyimpanan.unggah("kesepakatan", tujuan.name, uf.getvalue(), MIME_XLSX)
+                n_permanen += 1
+            except Exception:
+                pass
         st.cache_data.clear()
         n_ganti = sum(1 for _, s in hasil if s == "diganti")
         n_salin = sum(1 for _, s in hasil if s == "salinan")
@@ -283,6 +306,9 @@ def _dlg_unggah_kesepakatan():
             pesan += f", {n_ganti} diganti"
         if n_salin:
             pesan += f", {n_salin} disimpan sebagai salinan (nama sudah ada)"
+        if penyimpanan.aktif():
+            pesan += (" (permanen)" if n_permanen == len(hasil)
+                      else f" ({n_permanen}/{len(hasil)} permanen)")
         st.session_state["ung_rafaksi"] = True
         st.toast(pesan + ".", icon="✅")
         st.rerun()
@@ -299,11 +325,21 @@ def _dlg_unggah_invoice():
                            key="up_inv_file", label_visibility="collapsed")
     if st.button("Simpan ke data/invoice/", key="up_inv_save", type="primary",
                  disabled=not ufs):
+        n_permanen = 0
         for uf in ufs:
-            _simpan_file_unggahan(config.INVOICE_DIR, uf, timpa=False)
+            tujuan, _ = _simpan_file_unggahan(config.INVOICE_DIR, uf, timpa=False)
+            try:
+                penyimpanan.unggah("invoice", tujuan.name, uf.getvalue(), "application/pdf")
+                n_permanen += 1
+            except Exception:
+                pass
         st.session_state["ung_invoice"] = True
-        st.toast(f"{len(ufs)} PDF tersimpan di data/invoice/. "
-                 "Minta Claude Code membacanya agar muncul di dashboard.", icon="✅")
+        pesan = f"{len(ufs)} PDF tersimpan"
+        if penyimpanan.aktif():
+            pesan += (" permanen" if n_permanen == len(ufs)
+                      else f" ({n_permanen}/{len(ufs)} permanen)")
+        st.toast(pesan + ". Minta Claude Code membacanya agar muncul di dashboard.",
+                 icon="✅")
         st.rerun()
 
 
